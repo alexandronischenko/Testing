@@ -53,7 +53,6 @@ namespace AutoTest_One
             {
                 throw new Exception("Problem: settings file not found: " + File);
             }
-
             Document = new XmlDocument();
             Document.Load(File);
         }

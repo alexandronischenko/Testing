@@ -10,7 +10,7 @@ namespace AutoTest_One.Tests
         {
             ApplicationManager = ApplicationManager.GetInstance();
             ApplicationManager.NavigationHelper.GoLoginPage();
-            var accountData = new AccountData("alex12345", "qwerty1!");
+            var accountData = new AccountData(Settings.Login, Settings.Password);
             ApplicationManager.LoginHelper.Login(accountData);
             ApplicationManager.NavigationHelper.GoHomePage();
         }

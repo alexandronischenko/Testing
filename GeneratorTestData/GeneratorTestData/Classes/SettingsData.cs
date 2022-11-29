@@ -14,4 +14,9 @@ public class SettingsData
         Password = password;
         Url = url;
     }
+
+    public SettingsData()
+    {
+        
+    }
 }

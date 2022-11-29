@@ -10,7 +10,7 @@ namespace AutoTest_One.Helpers
         
         public void GoHomePage()
         {
-            Driver.Navigate().GoToUrl(Settings.BaseUrl);
+            Driver.Navigate().GoToUrl("https://swiftbook.ru/");
         }
         
         public void GoLoginPage()

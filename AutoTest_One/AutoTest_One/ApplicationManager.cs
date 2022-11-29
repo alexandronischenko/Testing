@@ -34,7 +34,7 @@ namespace AutoTest_One
 
         private ApplicationManager()
         {
-            _driver = new ChromeDriver("/Users/alexandronischenko/RiderProjects/AutoTest_One/packages/Selenium.WebDriver.ChromeDriver.106.0.5249.6100/driver/mac64arm");
+            _driver = new ChromeDriver("/Users/alexandronischenko/RiderProjects/Testing/Testing/AutoTest_One/packages/Selenium.WebDriver.ChromeDriver.106.0.5249.6100/driver/mac64arm/");
             _baseUrl = "https://www.google.com/";
             _verificationErrors = new StringBuilder();
             _navigationHelper = new NavigationHelper(this, _baseUrl);

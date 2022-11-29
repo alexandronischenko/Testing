@@ -39,9 +39,9 @@ namespace AutoTest_One.Helpers
         {
             // Driver.Navigate().GoToUrl("https://swiftbook.ru/");
             // Driver.FindElement(By.LinkText("Выйти")).Click();
-            Driver.Navigate().GoToUrl("https://swiftbook.ru/membership-login/membership-profile/");
+            // Driver.Navigate().GoToUrl("https://swiftbook.ru/membership-login/membership-profile/");
             
-            Driver.FindElement(By.XPath("//div[@id='post-1479']/div/div/div/div[2]/div/div/div/div/div/div[5]/a")).Click();
+            Driver.Navigate().GoToUrl("https://swiftbook.ru/?swpm-logout=true");
             isLoggedIn = false;
             Username = "";
         }
@@ -54,6 +54,11 @@ namespace AutoTest_One.Helpers
         private bool IsLoggedIn(string newUsername)
         {
             return newUsername == Username;
+        }
+
+        public string UserNotFound()
+        {
+            return Driver.FindElement(By.Id("swpm-login-widget-action-msg")).GetAttribute("value");
         }
     }
 }

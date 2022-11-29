@@ -6,7 +6,7 @@ namespace AutoTest_One
 {
     public static class Settings
     {
-        private const string File = "Settings.xml";
+        private const string File = @"/Users/alexandronischenko/RiderProjects/GeneratorTestData/GeneratorTestData/bin/Debug/net6.0/Settings";
 
         private static string _baseUrl;
         private static string _login;

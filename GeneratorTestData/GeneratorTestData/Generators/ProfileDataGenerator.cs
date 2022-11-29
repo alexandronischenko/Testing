@@ -6,7 +6,7 @@ namespace GeneratorTestData.Generators;
 
 public static class ProfileDataGenerator
 {
-    private const string Path = "profileData.xml";
+    private const string Path = "ProfileData.xml";
 
     public static void Generate(int count)
     {

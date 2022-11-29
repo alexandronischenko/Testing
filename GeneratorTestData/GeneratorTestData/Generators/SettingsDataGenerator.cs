@@ -4,9 +4,9 @@ using GeneratorTestData.Extensions;
 
 namespace GeneratorTestData.Generators;
 
-public class SettingsDataGenerator
+public static class SettingsDataGenerator
 {
-    private const string Path = "profileData.xml";
+    private const string Path = "Settings.xml";
 
     public static void Generate()
     {
